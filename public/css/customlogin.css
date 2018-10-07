@@ -1,0 +1,118 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+body {
+    background-color: #F6F6F6;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.pull-right {float: right;}
+.text-center {
+    text-align: center!important;
+}
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+ .login-brand {
+    margin: 20px 0;
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #666;
+    text-align: center;
+}
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+ .card.card-primary {
+    border-top: 2px solid #1E6ED1;
+}
+.card .card-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card .card-header, .card .card-footer, .card .card-body {
+    background-color: transparent;
+}
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.card {
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,.05);
+    box-shadow: 0 0 40px rgba(0,0,0,.05);
+    background-color: #fff;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    margin-bottom: 30px;
+}
+.card .card-header {
+    border-bottom-color: #f9f9f9;
+    line-height: 30px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    width: 100%;
+    
+}
+.simple-footer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #666;
+}
+.forgot a {color: #1C2A39;margin-right: 10px;}
+.signup a {color: #1C2A39;}
+.login-bg {background-color:#2C3A49; color: #fff;font-weight: 600;}
+.sign-bg {color: #E0E0E0; color: #000; font-weight: 600;}
+.btn {text-transform: uppercase;font-size: 13px;}
+.btn.btn-xs { padding: .15rem .25rem; font-size: .7rem;}
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+    outline: 0;
+    outline-offset: -2px;
+}
+.form-control:focus {
+    /*color: #55595c;*/
+    /* background-color: #fff; */
+    border-color: #1C2A39;
+    outline: none;
+}

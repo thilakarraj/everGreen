@@ -1,0 +1,161 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .02);
+}
+.btn.btn-xs {
+    padding: .15rem .25rem;
+    font-size: .725rem;
+}
+.card {
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,.05);
+    box-shadow: 0 0 40px rgba(0,0,0,.05);
+    background-color: #fff;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.bg-black {
+    background-color: black;
+}
+.footer {
+     width: 100%; 
+    color: #fff;
+    
+}
+.footer p {
+    margin: 0;
+    font-size: 0.7rem;
+    color: #fff;
+}
+.navbar-fixed-bottom {left: inherit;}
+.cursor-pointer {cursor: pointer;}
+.icon-grey  {color: #C0C0C0;}
+img.brand-logo {width: 186px;}
+
+
+ /*business color*/
+.soluship_bg {background-color: #990000;}
+.soluship_txt {color: #990000;}
+.page-item .page-link.soluship_txt {color: #990000;}
+
+/*business color*/ 
+
+
+
+/* other styles */
+.content-body {margin-top: 5px;}
+.form-control {padding: 0.25rem 0.5rem;
+    font-size: 13px; display: inline;}
+select.form-control.showentries {    padding: 0.15rem 0.25rem !important; font-size: 13px; width: auto; display: inline;}  
+.form-group {
+    margin-bottom: 0;
+}  
+.sidebar-brand.logo img {width: 186px; height: auto;margin: 5px;}
+.main-menu.menu-light .navigation li.selected a {background-color: #990000; color: #fff !important; border-right: 3px solid;}
+.menu-collapsed li.nav-item.has-sub.open {border-left: 2px solid #990000;}
+.menu-collapsed li.nav-item.has-sub.open a {color: #990000;}
+.menu-collapsed .main-menu.menu-fixed {left: 15px; border-radius: 0px;}
+.menu-collapsed .ps-container {border-radius: 0px;}
+.menu-collapsed .main-menu.menu-shadow { -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .1); box-shadow: 0px 0px 10px rgba(0, 0, 0, .1); }
+.btn {text-transform: uppercase; color: #fff}
+.btn.btn-xs {
+    padding: .15rem .25rem;
+    font-size: .8rem;
+}
+.pull-left {float: left;}
+.breadcrumb {font-size: 12px;}
+.breadcrumb-wrapper a {color:#7B7D7D;}
+.breadcrumb-item.active {color: #990000;font-weight: 600;}
+.fa-angle-double-right {
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.settings i {font-size: 1.3rem; color: #ACBAC9;}
+.settings i.icon-settings:after {
+    font-family: "Ionicons";
+    content: "\f104";
+    border: none !important;
+    position: absolute;
+    display: inline-block;
+    font-size: 0.75rem;
+    top: 10px;
+    color: #ACBAC9;
+    right: 0px;
+}
+ul.settings {margin: 0;padding: 0;}
+ul.settings li {list-style: none;}
+hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.settings .dropdown .dropdown-menu {background-color: #2C3A49; color: #fff;padding: 0;}
+.settings .dropdown-item:hover {background-color: #1C2A39;}
+.settings .dropdown-item {color: #fff;}
+/* table css */
+.table thead {
+  background-color: transparent;
+}
+.table tbody {
+  background-color: #FDFEFE;
+}
+.table thead th {
+    border: none;
+    padding: 15px 10px 15px 5px;
+    font-weight: 600;
+}
+.table tbody td {
+  padding: 8px 10px 7px 5px;
+  font-weight: 400;
+   
+}
+.table tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+.table tbody tr:nth-of-type(even) {
+    background-color: #F4F6F7;
+}
+.table tbody tr {
+  -webkit-box-shadow: 0 0 40px rgba(0,0,0,.05);
+    box-shadow: 0 0 40px rgba(0,0,0,.05); 
+    border-radius: 3px;
+    border: none;
+    position: relative;
+ 
+}
+
+/*.showcase-link {
+    position: relative;
+ }
+.showcase-link:hover {
+    opacity: 1;
+}
+.showcase-link a {
+    position: absolute;
+    display: block;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: rgba(36,45,55,.9);
+    opacity: 0;
+    -webkit-transition: visibility 0s ease-in-out,opacity .15s ease-in;
+    -o-transition: visibility 0s ease-in-out,opacity .15s ease-in;
+    transition: visibility 0s ease-in-out,opacity .15s ease-in;
+    border-radius: 2px;
+}*/

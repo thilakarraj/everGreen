@@ -1,0 +1,192 @@
+
+-- MySQL dump 10.13  Distrib 5.6.40, for Linux (x86_64)
+--
+-- Host: localhost    Database: laravel1
+-- ------------------------------------------------------
+-- Server version	5.6.40
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `migrations`
+--
+
+DROP TABLE IF EXISTS `migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `migrations` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `migration` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `migrations`
+--
+
+LOCK TABLES `migrations` WRITE;
+/*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
+INSERT INTO `migrations` VALUES (1,'2014_10_12_000000_create_users_table',1),(2,'2014_10_12_100000_create_password_resets_table',1),(3,'2018_06_19_114749_create_products_table',1);
+/*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `password_resets`
+--
+
+DROP TABLE IF EXISTS `password_resets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `password_resets` (
+  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  KEY `password_resets_email_index` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `password_resets`
+--
+
+LOCK TABLES `password_resets` WRITE;
+/*!40000 ALTER TABLE `password_resets` DISABLE KEYS */;
+/*!40000 ALTER TABLE `password_resets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `products`
+--
+
+DROP TABLE IF EXISTS `products`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `products` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `comment` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci,
+  `length` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `width` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `height` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `products`
+--
+
+LOCK TABLES `products` WRITE;
+/*!40000 ALTER TABLE `products` DISABLE KEYS */;
+INSERT INTO `products` VALUES (1,'Dfdasfasaf','sadfdsaf',NULL,NULL,NULL,NULL,NULL,NULL),(2,'aaa','sssss',NULL,NULL,NULL,NULL,NULL,NULL),(3,'aaaa','aaaa',NULL,NULL,NULL,NULL,NULL,NULL),(4,'bbbb','cccc',NULL,NULL,NULL,NULL,NULL,NULL),(5,'yhjhj','hjhjhj',NULL,NULL,NULL,NULL,NULL,NULL),(6,'iooio','78787878',NULL,NULL,NULL,NULL,NULL,NULL),(7,'ssss','ddd',NULL,NULL,NULL,NULL,NULL,NULL),(8,'cvcvcvcv','cvcvcv',NULL,NULL,NULL,NULL,NULL,NULL),(9,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(10,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(11,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(12,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(13,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(14,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(15,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(16,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(17,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(18,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(19,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(20,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(21,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(22,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(23,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(24,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(25,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(26,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(27,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(28,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(29,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(30,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(31,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(32,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(33,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(34,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(35,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(36,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(37,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(38,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(39,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(40,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(41,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(42,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(43,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(44,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(45,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(46,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(47,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(48,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(49,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(50,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(51,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(52,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(53,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(54,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(55,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(56,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(57,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(58,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(59,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(60,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(61,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(62,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(63,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(64,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(65,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(66,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(67,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(68,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(69,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(70,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(71,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(72,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(73,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(74,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(75,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(76,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(77,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(78,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(79,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(80,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(81,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(82,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(83,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(84,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(85,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(86,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(87,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(88,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(89,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(90,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(91,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(92,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(93,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(94,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(95,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(96,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(97,'dfdf',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(98,'asdfasdfsdf','vvvvvvvvvvvvvvvv',NULL,NULL,NULL,NULL,NULL,NULL),(99,'fdfdfdf','fcfgchc',NULL,NULL,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `products` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `role` varchar(450) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `users_email_unique` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'thaamizh','thamizh2704@gmail.com','e10adc3949ba59abbe56e057f20f883e','Dmv7WvIPOuRgHkcOFDkeagTzIB4yyWb9dgFb1AgM3I9pLr7Xkz87oabQgWsv','2018-07-06 07:40:29','2018-07-06 07:40:29','superadmin'),(2,'admin','thamizh2704@gmail.com1','21232f297a57a5a743894a0e4a801fc3','pk7NgEITb9Gv4lzflinwY0SBdlZZq1W1nQOtBsvvj8gw8nCOOm8g5ceyv0Wq','2018-07-09 00:00:16','2018-07-09 00:00:16','superadmin');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-07-13 10:51:49
+CREATE DATABASE  IF NOT EXISTS `laravel2` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `laravel2`;
+-- MySQL dump 10.13  Distrib 5.6.40, for Linux (x86_64)
+--
+-- Host: localhost    Database: laravel2
+-- ------------------------------------------------------
+-- Server version	5.6.40
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `test1`
+--
+
+DROP TABLE IF EXISTS `test1`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `test1` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `test1`
+--
+
+LOCK TABLES `test1` WRITE;
+/*!40000 ALTER TABLE `test1` DISABLE KEYS */;
+INSERT INTO `test1` VALUES (1,'aaa'),(2,'bbb'),(3,'ccc');
+/*!40000 ALTER TABLE `test1` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-07-13 10:51:49
